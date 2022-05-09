@@ -5,15 +5,15 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if(x > y) {
+  if (x > y) {
     return x;
-  } else if(x < y) {
-      return y;
+  } else if (x < y) {
+    return y;
   } else {
-    var messi = Math.random(); 
-      if(messi < 0.5) {
-        return x;
-      } else return y;
+    var messi = Math.random();
+    if (messi < 0.5) {
+      return x;
+    } else return y;
   }
 }
 
@@ -21,21 +21,21 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  if(edad >= 18) {
+  if (edad >= 18) {
     return "Allowed";
   } else return "Not allowed";
 }
-  
+
 function conection(status) {
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
   //Cuando el estado es igual a 1, el usuario está "Online"
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
-  if(status === 1) {
+  if (status === 1) {
     return "Online";
-  } else if(status === 2) {
-      return "Away";
+  } else if (status === 2) {
+    return "Away";
   } else return "Offline";
 }
 
@@ -46,12 +46,12 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  if(idioma === "aleman") {
+  if (idioma === "aleman") {
     return "Guten Tag!";
-  } else if(idioma === "mandarin") {
-      return "Ni Hao!";
-  } else if(idioma === "ingles") {
-      return "Hello!";
+  } else if (idioma === "mandarin") {
+    return "Ni Hao!";
+  } else if (idioma === "ingles") {
+    return "Hello!";
   } else return "Hola!";
 }
 
@@ -76,14 +76,14 @@ function colors(color) {
       return "Color not found";
   }
 
-  if(color === "blue") {
+  if (color === "blue") {
     return "This is blue";
-  } else if(color === "red") {
-      return "This is red";
-  } else if(color === "green") {
-      return "This is green";
-  } else if(color === "orange") {
-      return "This is orange";
+  } else if (color === "red") {
+    return "This is red";
+  } else if (color === "green") {
+    return "This is green";
+  } else if (color === "orange") {
+    return "This is orange";
   } else return "Color not found";
 }
 
@@ -117,12 +117,12 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if(esDivisible(numero,3) && esDivisible(numero,5)) {
+  if (esDivisible(numero, 3) && esDivisible(numero, 5)) {
     return "fizzbuzz";
-  } else if(esDivisible(numero,3)) {
-      return "fizz";
-  } else if(esDivisible(numero,5)) {
-      return "buzz";
+  } else if (esDivisible(numero, 3)) {
+    return "fizz";
+  } else if (esDivisible(numero, 5)) {
+    return "buzz";
   } else return numero;
 }
 
@@ -133,14 +133,14 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false.
-  if(num1 === 0 || num2 === 0 || num3 === 0) {
+  if (num1 === 0 || num2 === 0 || num3 === 0) {
     return "Error";
-  } else if(num1 < 0 || num2 < 0 || num3 < 0) {
-      return "Hay negativos";
-  } else if(num1 > num2 && num1 > num3 && num1 > 0) {
+  } else if (num1 < 0 || num2 < 0 || num3 < 0) {
+    return "Hay negativos";
+  } else if (num1 > num2 && num1 > num3 && num1 > 0) {
     return "Número 1 es mayor y positivo";
-  } else if(num3 > num1 && num3 > num2) {
-      return num3 + 1;
+  } else if (num3 > num1 && num3 > num2) {
+    return num3 + 1;
   } else return false;
 }
 
@@ -150,12 +150,12 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if(numero < 2) {
+  if (numero < 2) {
     return false;
   }
 
-  for(let i = 2 ; i < numero; i++) {
-    if(esDivisible(numero, i)) {
+  for (let i = 2; i < numero; i++) {
+    if (esDivisible(numero, i)) {
       return false;
     }
   }
@@ -167,16 +167,16 @@ function esDivisible(numero, i) {
   return numero % i === 0;
 }
 
-function esVerdadero(valor){
+function esVerdadero(valor) {
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-  if(valor) {
+  if (valor) {
     return "Soy verdadero";
   } else return "Soy falso";
 }
 
-function tablaDelSeis(){
+function tablaDelSeis() {
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
@@ -185,7 +185,7 @@ function tablaDelSeis(){
   return tablaMultiplicar6;
 }
 
-function tieneTresDigitos(numero){
+function tieneTresDigitos(numero) {
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
   return numero >= 100 && numero < 1000;
